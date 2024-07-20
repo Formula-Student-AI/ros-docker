@@ -1,6 +1,6 @@
 # README
 
-This repository provides .devcontainer files for VSCode to build a ROS 2 workspace and simulation.
+This folder provides .devcontainer files for VSCode to build a ROS 2 workspace and simulation.
 
 ## Versions
 - OS: Ubuntu 20.04 (Focal)
