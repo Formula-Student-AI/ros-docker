@@ -27,13 +27,10 @@ RUN sudo apt install -y git
 RUN rosdep update
 
 # EUFS setup
-# SHELL ["/bin/bash", "-c"]
-RUN sudo mkdir -p /fsai\
-    && cd /fsai
-RUN sudo rosdep install --from-paths /fsai --ignore-src -r -y
-RUN sudo echo 'export EUFS_MASTER=/fsai' >> ~/.bashrc
-# RUN /bin/bash -c "source ~/.bashrc"
-#RUN sudo rosdep install --from-paths $EUFS_MASTER --ignore-src -r -y
+RUN sudo mkdir -p /getting-started \
+    && cd /getting-started
+RUN sudo rosdep install --from-paths /getting-started --ignore-src -r -y
+RUN sudo echo 'export EUFS_MASTER=/getting-started' >> ~/.bashrc
 
 # Install dependencies for colcon to work
 RUN sudo apt install -y libyaml-cpp-dev
@@ -49,7 +46,3 @@ RUN sudo apt install ros-galactic-xacro
 
 # Source the ROS setup file
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
-
-#WORKDIR /fsai
-#RUN . /opt/ros/${ROS_DISTRO}/setup.bash
-#RUN colcon build
