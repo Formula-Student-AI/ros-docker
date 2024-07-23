@@ -18,6 +18,7 @@ This folder provides .devcontainer files for VSCode to build a ROS 2 workspace a
    ```
    git clone https://gitlab.com/eufs/eufs_sim
    git clone https://gitlab.com/eufs/eufs_msgs
+   git clone https://gitlab.com/eufs/eufs_rviz_plugins
    ```
 
 3. Reopen in Container
