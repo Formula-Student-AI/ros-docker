@@ -8,6 +8,8 @@ This folder provides .devcontainer files for VSCode to build a ROS 2 workspace a
 
 ## Instructions
 
+0. Download VScode and Docker Desktop
+
 1. Clone this Repo
    ```
    git clone https://github.com/danielpeppe/fsai-uob
