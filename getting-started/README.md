@@ -15,34 +15,27 @@ This folder provides .devcontainer files for VSCode to build a ROS 2 workspace a
    git clone https://github.com/danielpeppe/fsai-uob
    cd fsai-uob/getting-started
    ```
-    
-2. Clone the EUFS Repos
-   ```
-   git clone https://gitlab.com/eufs/eufs_sim
-   git clone https://gitlab.com/eufs/eufs_msgs
-   git clone https://gitlab.com/eufs/eufs_rviz_plugins
-   ```
 
-3. Reopen in Container
+2. Reopen in Container
    - Open the cloned repository in VSCode.
    - Click on the blue box in the bottom left-hand corner of the VSCode window.
    - Select "Reopen in Container".
 
-4. Build the Workspace
+3. Build the Workspace
    ```
-   colcon build
+   colcon build --symlink-install
    ```
 
-5. Source the Setup Script
+4. Source the Setup Script
    ```
    source install/setup.bash
    ```
 
-6. Launch ROS 2
+5. Launch ROS 2
    ```
    ros2 launch eufs_launcher eufs_launcher.launch.py
    ```
 
-## Credits
+## Credit
 - ijnek: https://github.com/ijnek/ros-devcontainer-template
 - EUFS: https://gitlab.com/eufs
