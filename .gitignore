@@ -1,6 +1,6 @@
-/getting-started/build/
-/getting-started/install/
-/getting-started/log/
+build/
+install/
+log/
 
 .vscode
 
