@@ -1,15 +1,16 @@
 {
-  "name": "galactic desktop",
+  "name": "ROS Desktop",
   "dockerFile": "Dockerfile",
+  "build": {
+    "args": {
+      "BASE_IMAGE": "${localEnv:BASE_IMAGE:ros:galactic-desktop}"
+    }
+  },
   "runArgs": [
-    "--privileged",
-    "--network=host"
+    "--privileged"
   ],
   "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
   "workspaceFolder": "/${localWorkspaceFolderBasename}",
-  "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
-  ],
   "customizations": {
     "vscode": {
       "extensions": [
