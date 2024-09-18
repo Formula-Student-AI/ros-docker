@@ -11,6 +11,3 @@ else
   # For x86_64 architecture
   export BASE_IMAGE="osrf/ros:galactic-desktop"
 fi
-
-# Launch VS Code
-code .
