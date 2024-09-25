@@ -1,10 +1,10 @@
 # README
 
-This folder provides .devcontainer files for VSCode to build a Ubuntu 20.04 docker container with ROS 2 Galactic installed.
+This folder provides .devcontainer files for VSCode to build a Ubuntu 20.04 docker container with ROS 2 Foxy installed.
 
 ## Versions
 - OS: Ubuntu 20.04 (Focal)
-- ROS: ROS 2 Galactic
+- ROS: ROS 2 Foxy
 
 ## Instructions
 
